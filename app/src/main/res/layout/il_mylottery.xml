@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dip"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/gray">
+
+
+        <Button
+            android:id="@+id/ii_lottery_shopping_buy"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/id_lottery_shopping_buy"/>
+
+    </LinearLayout>
+
+
+    <!-- 购物车展示 -->
+
+    <ListView
+        android:id="@+id/ii_shopping_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottom"
+        android:cacheColorHint="@android:color/white"
+        android:divider="@android:color/white"
+        android:dividerHeight="5dip"
+        android:visibility="invisible"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_empty"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom"
+        android:gravity="center"
+        android:background="@color/gray"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您还没有购买任何彩票,请前往购买界面!"
+            android:textColor="@color/gray1"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+</RelativeLayout>

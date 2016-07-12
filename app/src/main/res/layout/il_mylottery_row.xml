@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/id_item_bg" >
+    <LinearLayout
+        android:background="@color/gray1"
+        android:gravity="center_vertical"
+        android:id="@+id/il_mylottery_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/il_mylottery_time"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="时间:2016.7.10"
+            android:textColor="@color/orange"/>
+
+        <TextView
+            android:id="@+id/il_mylottery_nums"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="注数:10注"
+            android:textColor="@color/orange"/>
+
+        <TextView
+            android:layout_weight="2"
+            android:id="@+id/il_mylottery_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="金额:20元"
+            android:textColor="@color/orange"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/il_mylottery_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/ii_mylottery_issue"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:text="第20160807期:"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/ii_mylottery_reds"
+
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:textColor="@color/red"
+            android:text="01 15 16 23 30 09"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/ii_mylottery_blues"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:textColor="@color/blue"
+            android:text="07"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

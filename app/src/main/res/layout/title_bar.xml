@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+    <!--标题容器,三个样式-->
+    <!--普通标题-->
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/ii_common_title"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/id_title_bg"
+        >
+
+        <ImageView
+            android:id="@+id/ii_title_goback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/id_title_goback" />
+
+        <TextView
+            android:id="@+id/ii_title_content"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/ii_title_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/id_title_help" />
+    </RelativeLayout>
+
+    <!-- 未登录标题 -->
+
+    <RelativeLayout
+        android:id="@+id/ii_unlogin_title"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/id_title_bg"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/id_logo" />
+
+        <ImageView
+            android:id="@+id/ii_title_regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/id_purchase_regist" />
+
+        <ImageView
+            android:id="@+id/ii_title_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@id/ii_title_regist"
+            android:background="@drawable/id_purchase_login" />
+    </RelativeLayout>
+
+    <!-- 已经登陆标题 ,显示余额等个人信息!!!-->
+
+    <RelativeLayout
+        android:id="@+id/ii_login_title"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/id_title_bg"
+         >
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/id_cmc_logo" />
+
+        <ImageButton
+            android:id="@+id/ii_purchase_system_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/id_purchase_system_info" />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:id="@+id/ii_top_user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:layout_marginLeft="10dp"
+
+            android:text="@string/is_user_loginned_test" />
+    </RelativeLayout>
+
+</RelativeLayout>

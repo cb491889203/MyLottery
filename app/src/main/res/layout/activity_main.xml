@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.coconut.mylottery.MainActivity"
+    android:id="@+id/Rl_main">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/title_bar"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+
+    <include
+        android:id="@+id/include_bottom"
+        layout="@layout/bottom_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/middle_container"
+        android:layout_below="@id/include_title"
+        android:layout_above="@id/include_bottom">
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
